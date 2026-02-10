@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('icons/pastel lilac wallpapers desktop or tablet.jpg');
+    background-size: cover;
+}
+
+p{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.yes-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 3.5rem;
+  color: #ff4d8d;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+  margin: 40px auto;
+  width: 320px;
+  padding: 24px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.sticker {
+  position: fixed;
+  width: 250px;
+  pointer-events: none;
+  animation: float 3.5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.s1 { top: 40px; left: 50px; animation-duration: 3s; }
+.s2 { top: 120px; right: 80px; animation-duration: 4.5s; }
+.s3 { bottom: 90px; left: 70px; animation-duration: 3.8s; }
+.s4 { bottom: 140px; right: 120px; animation-duration: 5s; }
+.s5 { top: 75%; left: 45%; animation-duration: 4s; }

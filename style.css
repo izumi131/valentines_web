@@ -1,0 +1,119 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* 🚫 disables scrolling */
+}
+
+
+body {
+  background: pink;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  z-index: 1;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 999px; /* pill shape */
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.photo-container {
+  width: 300px;       /* fixed width */
+  height: 300px;      /* fixed height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px auto;  /* center horizontally */
+  background: #fff0f5; /* optional cute background */
+  z-index: 1;
+
+}
+
+button.yes-btn {
+  background: #ff4d6d;
+  color: white;
+  box-shadow: 0 6px 15px rgba(255, 77, 109, 0.4);
+}
+
+button.yes-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 77, 109, 0.6);
+}
+
+button.no-btn {
+  background: #ffe3ea;
+  color: #ff4d6d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button.no-btn:hover {
+  transform: scale(1.05);
+}
+
+
+body{
+  
+  background: pink;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('icons/pastel lilac wallpapers desktop or tablet.jpg');
+  background-size: cover;
+
+}
+
+#floating-icons {
+  position: fixed;   /* stays in place on scroll/phone */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* so clicks go through */
+  overflow: hidden;
+  z-index: 0;         /* behind other content */
+}
+
+.floating-icon {
+  position: absolute;
+  width: 40px;     /* smaller default size */
+  height: 40px;    /* smaller default size */
+  transition: transform 0.5s linear;
+}
